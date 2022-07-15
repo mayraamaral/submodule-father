@@ -3,11 +3,15 @@ A submodule is a git repository linked to another one. As example, this is the "
   
 To start a submodule, you just have to enter the father repository and type:  
   
-```git submodule add https://github.com/${USERNAME}/${NAME_OF_THE_REPOSITORY}```  
+```
+git submodule add https://github.com/${USERNAME}/${NAME_OF_THE_REPOSITORY}
+```  
   
 The integration between commits isn't synchronous, every time you push a commit, you also have to bring it to the father repository. You can do it this way:  
   
-```git submodule foreach git pull origin main```  
+```
+git submodule foreach git pull origin main
+```  
   
 Maybe this can also be helpful:  
   
